@@ -21,6 +21,19 @@
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   height: 100%;
 }
@@ -36,6 +49,7 @@ body {
   min-width: 1280px;
   margin: 0;
 }
+
 
 .wrapper {
   background-color: #ffffff;
@@ -64,35 +78,44 @@ body {
 
 .navigation-list {
   display: flex;
+  gap: 32px;
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 0;
   margin-right: auto;
-  margin-left: 28px;
-  width: 450px;
+  margin-left: 44px;
 }
 
 .navigation-list-user {
   display: flex;
+  gap: 25px;
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.navigation-list-item {
+.navigation-link {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
- }
-
-.navigation-link {
   text-decoration: none;
   color: #000000;
-  padding: 20px 16px;
+}
+
+.navigation-link-search {
+  background-image: url("../images/search.svg");
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.navigation-link-favorite {
+  background-image: url("../images/favorite.svg");
+  margin-right: 8px;
+  width: 18px;
+  height: 17px;
+  display: block;
 }
 
 .button {
@@ -114,8 +137,12 @@ body {
   line-height: 20px;
   padding: 8px 34px;
   background-color: #756157;
-  margin-left: 8px;
-  display: block;
+}
+
+.active-page {
+  text-decoration: underline 3px solid #756257;
+  text-underline-offset: 23px;
+  z-index: 1;
 }
 
 /* блок-герой  */
@@ -201,14 +228,9 @@ body {
   list-style: none;
 }
 
-.advantages-list-item {
-  width: 400px;
-}
-
 .advantages-list-item:first-child,
 .advantages-list-item:last-child {
   display: flex;
-  width: 1200px;
 }
 
 .advantages-text {
@@ -218,7 +240,7 @@ body {
 }
 
 .advantages-img {
-  display: block;
+  vertical-align: middle;
 }
 
 .accent-tile {
@@ -244,6 +266,16 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+/* полоска-разделитель */
+.advantages-list-title::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 30px auto;
+  display: block;
+}
+
 .dark-tile .advantages-list-title::after,
 .light-tile .advantages-list-title::after {
   background-color: rgba(0, 0, 0, 0.3);
@@ -251,6 +283,31 @@ body {
 
 .recomendation-list-item .advantages-list-title::after {
   content: none;
+}
+
+/* оформление плиток с иконками */
+.recomendation-list-item:first-child h3::before {
+  content: url("../images/housing.svg");
+  width: 75px;
+  height: 72px;
+  margin: 0 auto 30px;
+  display: flex;
+}
+
+.recomendation-list-item:last-child h3::before {
+  content: url("../images/gifts.svg");
+  width: 64px;
+  height: 76px;
+  margin: 0 auto 28px;
+  display: flex;
+}
+
+.recomendation-list-item:nth-child(2) h3::before {
+  content: url("../images/food.svg");
+  width: 74px;
+  height: 70px;
+  margin: 0 auto 30px;
+  display: flex;
 }
 
 .recomendation-text {
@@ -277,7 +334,7 @@ body {
   background-size: cover;
   color: #ffffff;
   background-color: #999387;
-}
+ }
 
 .special-main-subscribe .main-title {
   color: #ffffff;
@@ -319,7 +376,6 @@ body {
   list-style: none;
   gap: 26px;
   padding-left: 12px;
-  width: 145px;
 }
 
 .footer-social-link {
@@ -341,6 +397,7 @@ body {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+  margin-left: 15px;
 }
 
 .footer-phone:hover,
@@ -354,7 +411,7 @@ body {
 }
 
 .academy-logo {
-  color: #000000;
+color: #000000;
 }
 
 .academy-logo:hover,
