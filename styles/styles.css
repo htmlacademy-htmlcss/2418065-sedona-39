@@ -411,6 +411,10 @@ body {
 
 .recomendation-title-gifts::before {
   background-image: url("../images/gifts.svg");
+  width: 65px;
+  height: 76px;
+  margin: 0 auto 28px;
+
 }
 
 .recomendation-list-title {
@@ -418,7 +422,7 @@ body {
 }
 
 .recomendation-text {
-  padding: 81px 85px 81px;
+  padding: 80px 85px 81px;
   display: flex;
   flex-direction: column;
   gap: 30px;
