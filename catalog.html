@@ -29,12 +29,19 @@
           <ul class="navigation-list-user">
             <li class="navigation-list-user-item">
               <a href="#" class="navigation-user-link navigation-user-search">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.5 17.0083L14.8 13.3287C15.8 12.0359 16.5 10.3453 16.5 8.4558C16.5 4.08011 12.9 0.5 8.5 0.5C4.1 0.5 0.5 4.17956 0.5 8.55525C0.5 12.9309 4.1 16.511 8.5 16.511C10.3 16.511 12 15.9144 13.4 14.8204L17.1 18.5L18.5 17.0083ZM8.5 14.5221C5.2 14.5221 2.5 11.837 2.5 8.55525C2.5 5.27348 5.2 2.5884 8.5 2.5884C11.8 2.5884 14.5 5.27348 14.5 8.55525C14.5 11.837 11.8 14.5221 8.5 14.5221Z"/>
+                </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-list-user-item favorites-quantity">
+            <li class="navigation-list-user-item">
               <a href="#" class="navigation-user-link navigation-user-favorite">
-                <span class="visually-hidden">В избранное добавлено <span class="likes-quantity">12</span> отелей </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+                </svg>
+                <span class="visually-hidden">Гостиниц в избранное добавлено </span>
+                <span class="favorites-quantity">12</span>
               </a>
             </li>
             <li class="navigation-list-user-item">
@@ -53,7 +60,7 @@
               <a class="breadcrumbs-list-link" href="index.html"><span class="visually-hidden">Главная</span></a>
             </li>
             <li class="breadcrumbs-list-item">
-              <a class="breadcrumbs-hotels">Гостиницы</a>
+              <span class="breadcrumbs-hotels">Гостиницы</span>
             </li>
           </ul>
           <form class="main-filter-form" action="https://echo.htmlacademy.ru/courses" method="get" id="change-hotel">
@@ -61,44 +68,50 @@
               <legend class="filter-title filter-title-checkbox">Инфраструктура:</legend>
               <ul class="checkbox-list">
                 <li class="checkbox-list-item">
-                  <label for="pool" class="form-label">
-                    <input type="checkbox" name="infrastructure" value="pool" id="pool" checked>
-                    Бассейн
+                  <label class="form-label">
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                    <span class="control-mark-checkbox"></span>
+                    <span class="chekbox-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="checkbox-list-item">
-                  <label for="parking" class="form-label">
-                    <input type="checkbox" name="infrastructure" value="parking" id="parking" checked>
-                    Парковка
+                  <label class="form-label">
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark-checkbox"></span>
+                    <span class="chekbox-label">Парковка</span>
                   </label>
                 </li>
                 <li class="checkbox-list-item">
-                  <label for="network" class="form-label">
-                    <input type="checkbox" name="infrastructure" value="network" id="network">
-                    Wi-Fi
+                  <label class="form-label">
+                    <input class="visually-hidden control-input" type="checkbox" name="network">
+                    <span class="control-mark-checkbox"></span>
+                    <span class="chekbox-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form-radiobutton">
-              <legend class="filter-title filter-title-radiobuttons">Тип Жилья:</legend>
+              <legend class="filter-title filter-title-radio">Тип Жилья:</legend>
               <ul class="radiobuttons-list">
                 <li class="radiobuttons-list-item">
-                  <label for="hotel" class="form-label">
-                    <input type="radio" name="housing" value="hotel" id="hotel" checked>
-                    Гостиница
+                  <label class="form-label">
+                    <input class="visually-hidden control-input" type="radio" name="housing" value="hotel" checked>
+                    <span class="control-mark-radio"></span>
+                    <span class="radio-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="radiobuttons-list-item">
-                  <label for="motel" class="form-label">
-                    <input type="radio" name="housing" value="motel" id="motel">
-                    Мотель
+                  <label class="form-label">
+                    <input class="visually-hidden control-input" type="radio" name="housing" value="motel">
+                    <span class="control-mark-radio"></span>
+                    <span class="radio-label">Мотель</span>
                   </label>
                 </li>
                 <li class="radiobuttons-list-item">
-                  <label for="apartments" class="form-label">
-                    <input type="radio" name="housing" value="apartments" id="apartments">
-                    Апартаменты
+                  <label class="form-label">
+                    <input class="visually-hidden control-input" type="radio" name="housing" value="apartments">
+                    <span class="control-mark-radio"></span>
+                    <span class="radio-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -126,7 +139,7 @@
             </fieldset>
             <div class="buttons-list">
               <button class="button apply-button" type="submit" form="change-hotel">применить</button>
-              <button class="reset-button"type="reset" form="change-hotel">сбросить</button>
+              <button class="reset-button" type="reset" form="change-hotel">сбросить</button>
             </div>
           </form>
         </section>
@@ -135,7 +148,7 @@
             <h2 class="main-title catalog-results-title">
               Найдено гостиниц: <span>38</span>
             </h2>
-            <select class="sorting-select-list" name="sorting-list" aria-label="Сортировка найденных гостиниц">
+            <select class="sorting-select-list" aria-label="Сортировка найденных гостиниц">
               <option value="price-low">Сначала дешевые</option>
               <option value="price-high">Сначала дорогие</option>
               <option value="raiting">По рейтингу</option>
