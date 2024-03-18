@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -29,17 +30,11 @@
           <ul class="navigation-list-user">
             <li class="navigation-list-user-item">
               <a href="#" class="navigation-user-link navigation-user-search">
-                <svg width="19" height="19" viewBox="0 0 19 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18.5 17.0083L14.8 13.3287C15.8 12.0359 16.5 10.3453 16.5 8.4558C16.5 4.08011 12.9 0.5 8.5 0.5C4.1 0.5 0.5 4.17956 0.5 8.55525C0.5 12.9309 4.1 16.511 8.5 16.511C10.3 16.511 12 15.9144 13.4 14.8204L17.1 18.5L18.5 17.0083ZM8.5 14.5221C5.2 14.5221 2.5 11.837 2.5 8.55525C2.5 5.27348 5.2 2.5884 8.5 2.5884C11.8 2.5884 14.5 5.27348 14.5 8.55525C14.5 11.837 11.8 14.5221 8.5 14.5221Z"/>
-                </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-list-user-item">
               <a href="#" class="navigation-user-link navigation-user-favorite">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
-                </svg>
                 <span class="visually-hidden">Гостиниц в избранное добавлено </span>
                 <span class="favorites-quantity">12</span>
               </a>
@@ -83,7 +78,7 @@
                 </li>
                 <li class="checkbox-list-item">
                   <label class="form-label">
-                    <input class="visually-hidden control-input" type="checkbox" name="network">
+                    <input class="visually-hidden control-input" type="checkbox" name="network" disabled>
                     <span class="control-mark-checkbox"></span>
                     <span class="chekbox-label">Wi-Fi</span>
                   </label>
@@ -120,9 +115,9 @@
               <legend class="filter-title filter-title-price">Стоимость, ₽:</legend>
               <div class="input-price-row">
                 <label for="price-low" class="label-price label-price-from">от</label>
-                <input class="price-input-low price-input" name="price-input" id="price-low" type="number" placeholder="0">
+                <input class="price-input-low price-input field" name="price-input" id="price-low" type="number" placeholder="0">
                 <label for="price-high" class="label-price label-price-till">до</label>
-                <input class="price-input-high price-input" name="price-input" id="price-high" type="number" placeholder="9000">
+                <input class="price-input-high price-input field" name="price-input" id="price-high" type="number" placeholder="9000">
               </div>
               <div class="range">
                 <div class="range-scale">
@@ -276,7 +271,7 @@
           </p>
           <form action="https://echo.htmlacademy.ru/courses" method="post" class="subscribe-form" name="subscribe-form">
             <label for="subs" class="visually-hidden">Укажите ваш e-mail</label>
-            <input class="subscribe-email" type="email" name="user-email" id="subs" placeholder="Ваш e-mail" required>
+            <input class="subscribe-email field" type="email" name="user-email" id="subs" placeholder="Ваш e-mail" required>
             <button class="subscribe-button button" type="submit">
               подписаться
             </button>
@@ -301,7 +296,9 @@
             </a>
           </li>
         </ul>
-        <a href="tel:+78128121212" class="footer-phone">+7 (812) 812-12-12</a>
+        <div class="footer-phone-wrapper">
+          <a href="tel:+78128121212" class="footer-phone">+7 (812) 812-12-12</a>
+        </div>
         <a href="https://htmlacademy.ru" class="academy-logo-link">
           <span class="visually-hidden">Сайт разработан в HTML-Academy</span>
           <svg class="academy-logo" aria-label="Логотип разработчика Html-Academy" role="img" xmlns="http://www.w3.org/2000/svg" width="115" height="33" viewBox="0 0 115 33" fill="currentColor">
