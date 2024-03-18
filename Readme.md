@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Артем Новиков](https://up.htmlacademy.ru/htmlcss/39/user/2418065).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
+* Сайт: [Sedona](https://novikoffartem.github.io/2418065-sedona-39/)
 
 ---
 
