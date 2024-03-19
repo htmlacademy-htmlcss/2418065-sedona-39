@@ -291,7 +291,7 @@ body {
 }
 
 .advantages-title {
-  padding: 69px 0;
+  padding: 69px 90px;
   margin-bottom: 21px;
 }
 
@@ -319,7 +319,7 @@ body {
 }
 
 .main-text {
-  padding: 64px 0;
+  padding: 64px 90px;
 }
 
 .main-text .main-description {
@@ -883,8 +883,6 @@ body {
 }
 
 .price-input::-webkit-inner-spin-button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -1327,7 +1325,6 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 2;
-  /* display: flex; */
   display: none;
 }
 
@@ -1470,8 +1467,6 @@ body {
 }
 
 .short-field::-webkit-inner-spin-button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
   appearance: none;
 }
 
