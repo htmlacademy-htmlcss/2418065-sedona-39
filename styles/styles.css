@@ -347,7 +347,6 @@ body {
 .advantages-list-item,
 .recomendation-list-item {
   width: 400px;
-  flex-grow: 1;
 }
 
 .advantages-list-item-wide {
